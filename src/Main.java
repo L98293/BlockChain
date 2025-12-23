@@ -28,6 +28,6 @@ public class Main {
 
 		// 채굴 결과
 		System.out.println("최종 Nonce는 다음과 같습니다.\n" + genesisBlock.getNonce());
-		System.out.println("최종 Hash는 다음과 같습니다.\n" + genesisBlock.getHash());
+		System.out.println("최종 Hash는 다음과 같습니다.\n" + minedHash);
 	}
 }
