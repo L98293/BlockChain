@@ -1,9 +1,12 @@
+import BlcokChain.domain.Block;
+import BlcokChain.usecase.CalculateHash;
+import BlcokChain.usecase.PoW;
+
+import java.util.Date;
+
 public class Main {
 	public static void main(String[] args) {
 
-<<<<<<< Updated upstream
-		System.out.println("Hello World!");
-=======
 		// 맨 앞 블록 생성
 		Block genesisBlock = new Block("the first Block", "0", new Date().getTime());
 
@@ -26,6 +29,5 @@ public class Main {
 		// 채굴 결과
 		System.out.println("최종 Nonce는 다음과 같습니다.\n" + genesisBlock.getNonce());
 		System.out.println("최종 Hash는 다음과 같습니다.\n" + minedHash);
->>>>>>> Stashed changes
 	}
 }
