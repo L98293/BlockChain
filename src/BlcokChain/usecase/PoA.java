@@ -14,7 +14,7 @@ public class PoA {
 
 	public String mineBlock(int prefix, String adminKey) {
 		if (!"DkOGE5v3ZjEDzY/xgsdTyQVPD0cNy47hOr6UQCQsoyE=".equals(adminKey)) {
-			System.out.println("승인되지않은 사용자 입니다.");
+			System.out.println("승인되지 않은 사용자 입니다.");
 			return null;
 		}
 
@@ -24,7 +24,7 @@ public class PoA {
 			block.setHash(calculateHash.calculateHash());
 		}
 
-		System.out.println("블록 생성 중");
+		System.out.println("인증 중");
 
 		while (!block.getHash().substring(0, prefix).equals(prefixString)) {
 			block.setNonce(block.getNonce() + 1);
@@ -34,7 +34,7 @@ public class PoA {
 
 			System.out.printf("현재 Nonce: %d\n", block.getNonce());
 		}
-		System.out.println("정상적으로 기록되었습니다.");
+		System.out.println("인증되었습니다.");
 		return block.getHash();
 	}
 }
