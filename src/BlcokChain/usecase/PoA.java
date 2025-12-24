@@ -24,7 +24,7 @@ public class PoA {
 			block.setHash(calculateHash.calculateHash());
 		}
 
-		System.out.println("블록 생성 중");
+		System.out.println("작업 중");
 
 		while (!block.getHash().substring(0, prefix).equals(prefixString)) {
 			block.setNonce(block.getNonce() + 1);
@@ -34,7 +34,7 @@ public class PoA {
 
 			System.out.printf("현재 Nonce: %d\n", block.getNonce());
 		}
-		System.out.println("정상적으로 기록되었습니다.");
+		System.out.println("작업이 완료되었습니다.");
 		return block.getHash();
 	}
 }
