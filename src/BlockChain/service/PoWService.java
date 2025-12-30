@@ -1,8 +1,8 @@
-package BlcokChain.service;
+package BlockChain.service;
 
-import BlcokChain.domain.Block;
-import BlcokChain.usecase.CalculateHash;
-import BlcokChain.usecase.PoW;
+import BlockChain.domain.Block;
+import BlockChain.usecase.CalculateHash;
+import BlockChain.usecase.PoW;
 
 import java.util.Date;
 
@@ -11,13 +11,13 @@ public class PoWService {
 	// PoW(작업증명 방식)
 	public static void usePow() {
 		// 맨 앞 블록 생성
-		Block genesisBlock = new Block("the first Block", "0", new Date().getTime());
+		Block genesisBlock = new Block("I send 1 BTC to you", "0", new Date().getTime());
 
 		// 해시 생성
 		CalculateHash calculateHash = new CalculateHash(genesisBlock);
 		PoW pow = new PoW(genesisBlock, calculateHash);
 
-		int difficulty = 3;
+		int difficulty = 1;
 
 
 		String minedHash = pow.mineBlock(difficulty);

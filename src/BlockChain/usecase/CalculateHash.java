@@ -1,6 +1,6 @@
-package BlcokChain.usecase;
+package BlockChain.usecase;
 
-import BlcokChain.domain.Block;
+import BlockChain.domain.Block;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

@@ -2,8 +2,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import static BlcokChain.service.PoAService.usePoa;
-import static BlcokChain.service.PoWService.usePow;
+import static BlockChain.service.PoAService.usePoa;
+import static BlockChain.service.PoWService.usePow;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
