@@ -1,4 +1,4 @@
-package BlcokChain.domain;
+package BlockChain.domain;
 
 public class Block {
 	private String hash;
